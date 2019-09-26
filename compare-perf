@@ -1,0 +1,116 @@
+Report Summary
+Load Profile
+
+Per Second	Per Transaction	Per Exec	Per Call
+DB Time(s):	38.3	0.2	0.00	0.00
+DB CPU(s):	22.1	0.1	0.00	0.00
+Background CPU(s):	0.4	0.0	0.00	0.00
+Redo size (bytes):	944,409.1	4,884.7	 	 
+Logical read (blocks):	1,269,498.1	6,566.2	 	 
+Block changes:	5,876.4	30.4	 	 
+Physical read (blocks):	29,834.8	154.3	 	 
+Physical write (blocks):	970.1	5.0	 	 
+Read IO requests:	2,131.0	11.0	 	 
+Write IO requests:	98.6	0.5	 	 
+Read IO (MB):	233.1	1.2	 	 
+Write IO (MB):	7.6	0.0	 	 
+IM scan rows:	0.0	0.0	 	 
+Session Logical Read IM:	 	 	 	 
+User calls:	8,619.9	44.6	 	 
+Parses (SQL):	6,122.9	31.7	 	 
+Hard parses (SQL):	68.3	0.4	 	 
+SQL Work Area (MB):	401.0	2.1	 	 
+Logons:	13.5	0.1	 	 
+Executes (SQL):	10,759.4	55.7	 	 
+Rollbacks:	1.1	0.0	 	 
+Transactions:	193.3	 	 	 
+Instance Efficiency Percentages (Target 100%)
+
+Buffer Nowait %:	100.00	Redo NoWait %:	100.00
+Buffer Hit %:	98.79	In-memory Sort %:	100.00
+Library Hit %:	98.46	Soft Parse %:	98.88
+Execute to Parse %:	43.09	Latch Hit %:	99.97
+Parse CPU to Parse Elapsd %:	63.87	% Non-Parse CPU:	98.32
+Flash Cache Hit %:	0.00
+Top 10 Foreground Events by Total Wait Time
+
+Event	Waits	Total Wait Time (sec)	Wait Avg(ms)	% DB time	Wait Class
+DB CPU	 	357.2K	 	57.6	 
+db file scattered read	3,600,252	86.6K	24.07	14.0	User I/O
+db file sequential read	27,008,084	27K	1.00	4.3	User I/O
+PX Deq: Slave Session Stats	421,551	19K	45.00	3.1	Other
+log file sync	2,315,998	9442	4.08	1.5	Commit
+latch: call allocation	104,801	4227.5	40.34	.7	Other
+direct path read	238,461	3521.4	14.77	.6	User I/O
+direct path read temp	346,771	3102.2	8.95	.5	User I/O
+SQL*Net message from dblink	2,954	1587	537.23	.3	Network
+direct path write temp	80,805	1114.1	13.79	.2	User I/O
+Wait Classes by Total Wait Time
+
+Wait Class	Waits	Total Wait Time (sec)	Avg Wait (ms)	% DB time	Avg Active Sessions
+DB CPU	 	357,223	 	57.6	22.1
+User I/O	32,832,673	122,820	3.74	19.8	7.6
+Other	5,869,531	33,998	5.79	5.5	2.1
+System I/O	14,538,342	10,804	0.74	1.7	0.7
+Commit	2,316,209	9,446	4.08	1.5	0.6
+Network	104,435,671	1,866	0.02	.3	0.1
+Concurrency	441,100	1,256	2.85	.2	0.1
+Application	2,746	81	29.46	.0	0.0
+Configuration	3,639	65	17.80	.0	0.0
+Administrative	3	2	514.89	.0	0.0
+Host CPU
+
+CPUs	Cores	Sockets	Load Average Begin	Load Average End	%User	%System	%WIO	%Idle
+128	64	4	64.14	221.15	17.2	1.0	1.8	81.7
+Instance CPU
+
+%Total CPU	%Busy CPU	%DB time waiting for CPU (Resource Manager)
+17.8	97.1	0.0
+IO Profile
+
+Read+Write Per Second	Read per Second	Write Per Second
+Total Requests:	3,305.0	2,814.0	491.0
+Database Requests:	2,229.6	2,131.0	98.6
+Optimized Requests:	0.0	0.0	0.0
+Redo Requests:	385.7	3.4	382.3
+Total (MB):	268.0	254.0	14.0
+Database (MB):	240.7	233.1	7.6
+Optimized Total (MB):	0.0	0.0	0.0
+Redo (MB):	3.0	1.1	2.0
+Database (blocks):	30,804.9	29,834.8	970.1
+Via Buffer Cache (blocks):	15,276.5	15,132.7	143.9
+Direct (blocks):	15,528.4	14,702.2	826.3
+Memory Statistics
+
+Begin	End
+Host Mem (MB):	1,967,232.4	1,967,232.4
+SGA use (MB):	1,024,000.0	1,024,000.0
+PGA use (MB):	9,387.3	13,557.9
+% Host Mem used for SGA+PGA:	52.53	52.74
+Cache Sizes
+
+Begin	End		
+Buffer Cache:	861,184M	861,184M	Std Block Size:	8K
+Shared Pool Size:	154,112M	154,112M	Log Buffer:	516,732K
+In-Memory Area:	0M	0M
+Shared Pool Statistics
+
+Begin	End
+Memory Usage %:	89.81	90.50
+% SQL with executions>1:	89.93	98.38
+% Memory for SQL w/exec>1:	82.30	98.27
+
+Main Report
+Report Summary
+Wait Events Statistics
+SQL Statistics
+Instance Activity Statistics
+IO Stats
+Buffer Pool Statistics
+Advisory Statistics
+Wait Statistics
+Undo Statistics
+Latch Statistics
+Segment Statistics
+Dictionary Cache Statistics
+Library Cache Statistics
